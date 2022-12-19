@@ -4,7 +4,7 @@ d) module
  kskei3
  kskei3 to set up a kskei3 library. 
  q).import.module`kskei3
-// functions:
+/ functions:
 
 .kskei3.PI: 22%7;
 
@@ -27,7 +27,7 @@ d) function
     u_list:-1+ num?2.0;
     v_list:-1+ num?2.0;
     s:.kskei3.get_length[u_list;v_list];
-    invalid_index:where or [(s=0);(s>=1)];           
+    invalid_index:where or [(s=0);(s>=1)];                      /         
     while[0<(count [invalid_index]);
         u_list[invalid_index]: -1+(count[invalid_index]?2.0);
         v_list[invalid_index]: -1+(count[invalid_index]?2.0);
